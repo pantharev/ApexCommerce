@@ -1,0 +1,17 @@
+[] - header 
+[] - body
+
+
+[] - insipiration: amazon; etsy; alibaba; 
+
+[] - pages
+
+    [] - products
+    [] - shopping cart
+        [] -product 
+            [] - reviews
+    [] - wishlist
+    [] - orders
+
+
+[] - footer
