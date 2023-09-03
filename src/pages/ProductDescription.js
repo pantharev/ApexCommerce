@@ -23,7 +23,7 @@ export default function ProductDescription() {
                 <img src={'../' + img}></img>
             </div>
             <div className="md:w-[50%]">
-                <h2>{name}</h2>
+                <h2 className="font-bold text-3xl">{name}</h2>
                 {description.split("\n").map((line) => (
                     <p className="mt-3 text-center md:text-left ml-5">{line}</p>
                 ))}
