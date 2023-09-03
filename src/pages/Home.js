@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
 
     const [confetti, setConfetti] = useState(false);
     const { width, height } = useWindowSize()
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -17,11 +19,7 @@ export default function Home() {
                 <br></br>Our products come from the best luxury brands and are also made by us with extremely premium quality!
                 <br></br>Hope you're able to find what you're looking for!
             </p>
-            <button onClick={() => setConfetti(prev => !prev)} className="mt-3 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Confetti</button>
-            {confetti && <Confetti
-                width={width}
-                height={height}
-                /> }
+            <button onClick={() => navigate('/products')} className="mt-3 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Go to shop</button>
         </div>
     )
 }

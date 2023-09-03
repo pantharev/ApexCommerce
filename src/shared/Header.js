@@ -1,7 +1,22 @@
+import React, { useEffect, useContext, useState } from 'react';
 import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { ShopContext } from '../context/shop-context';
 
 export default function Header(){
+
+    const [items, setItems] = useState(0);
+
+    const { cartItems } = useContext(ShopContext);
+
+    useEffect(() => {
+        let totalItems = 0;
+        Object.entries(cartItems).forEach(([key, value]) => {
+            totalItems += value;
+        });
+        setItems(totalItems);
+    }, [cartItems])
+
     return (
     <header>
         <ul className="flex justify-left text-purple-600 gap-x-3">
@@ -16,7 +31,7 @@ export default function Header(){
             <Link to="/products">Products</Link>
           </li>
           <li>
-            <Link to="/cart" className="flex gap-x-1 items-center"><AiOutlineShoppingCart /> Cart</Link>
+            <Link to="/cart" className="flex gap-x-1 items-center"><AiOutlineShoppingCart /> Cart ({items})</Link>
           </li>
         </ul>
       </header>

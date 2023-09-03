@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ShopContext } from '../context/shop-context';
 
 export default function ProductThumbnail({ id, name, color, description, price, img }) {
+
+    const { cartItems } = useContext(ShopContext);
 
     return (
     <div class="group relative shadow-xl">
@@ -13,7 +16,7 @@ export default function ProductThumbnail({ id, name, color, description, price, 
             <h3 class="text-sm text-gray-800">
               <Link to={'../products/' + id} state={{ name, color, description, price, img }}> {/* TODO: link to product description page */}
                 <span aria-hidden="true" class="absolute inset-0"></span>
-                {name}
+                {name} {cartItems[id] > 0 && <> - ({cartItems[id]}) </>}
               </Link>
             </h3>
             <p class="mt-1 text-sm text-gray-500">{color}</p>
