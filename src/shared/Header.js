@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export default function Header(){
     return (
@@ -15,7 +16,7 @@ export default function Header(){
             <Link to="/products">Products</Link>
           </li>
           <li>
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart" className="flex gap-x-1 items-center"><AiOutlineShoppingCart /> Cart</Link>
           </li>
         </ul>
       </header>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProductThumbnail from './components/ProductThumbnail';
+import ProductThumbnail from '../components/ProductThumbnail';
 
 export default function Products() {
     const [products, setProducts] = useState([

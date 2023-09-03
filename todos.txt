@@ -11,13 +11,14 @@
 
     [] - productsDescription page component. name, description, add to cart.
     
-    [] - shopping cart
+    [w] - shopping cart
         https://dribbble.com/shots/17776489-Shopping-Cart
-    [] - product description page
+    [w] - product description page
         UX/UI design: preferred: https://dribbble.com/shots/20604159--DailyUI-Day-12-E-commerce-shop-single-item
         https://www.etsy.com/listing/1071094714/spooky-sweatshirt-stay-spooky-sweatshirt?click_key=cd5bf1dcf8782849ca7219783bba713696519dc5%3A1071094714&click_sum=590e40d9&ref=hp_editors_picks_primary-5&sts=1
         additional functionalities: sale
             [] - reviews
+    
     [] - wishlist
     [] - orders
 
