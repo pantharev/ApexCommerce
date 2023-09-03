@@ -9,9 +9,15 @@ export default function Home() {
 
     return (
         <div>
-            <h1>Home</h1>
-            <p>Welcome to ApexCommerce!</p>
-            <button onClick={() => setConfetti(prev => !prev)} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Confetti</button>
+            <h1 className="mt-2 text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 text-center text-gradient font-extrabold">ApexCommerce</h1>
+
+            <p className="mt-3 text-lg text-slate-700">
+                Welcome to Apexcommerce! 
+                <br></br>Browse our store to see our products! 
+                <br></br>Our products come from the best luxury brands and are also made by us with extremely premium quality!
+                <br></br>Hope you're able to find what you're looking for!
+            </p>
+            <button onClick={() => setConfetti(prev => !prev)} className="mt-3 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Confetti</button>
             {confetti && <Confetti
                 width={width}
                 height={height}

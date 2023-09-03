@@ -7,30 +7,19 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './shared/Header';
 import Layout from './components/Layout';
 import Home from './Home';
+import ProductDescription from './components/ProductDescription';
 
 function App() {
   return (
     <div className="App">
-
       <Layout>
-        <h1>ApexCommerce</h1>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDescription />} />
+          <Route path="/cart" element={<ShoppingCart />} />
+        </Routes>
       </Layout>
-
-      <main>
-        <div style={{display: 'flex', background: 'green'}}>
-          
-        </div>
-      </main>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/cart" element={<ShoppingCart />} />
-      </Routes>
-
-      <footer>
-
-      </footer>
     </div>
   );
 }
