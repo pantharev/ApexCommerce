@@ -22,5 +22,6 @@
     [] - wishlist
     [] - orders
 
+[] - reference/credits for shopping cart functionality + context: https://www.youtube.com/watch?v=tEMrD9t85v4
 
 [] - footer
