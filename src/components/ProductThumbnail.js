@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function ProductThumbnail({ id, name, color, description, price, img }) {
 
     return (
-    <div class="group relative">
+    <div class="group relative shadow-xl">
         <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
           <img src={img} alt={name} class="h-full w-full object-cover object-center lg:h-full lg:w-full" />
         </div>
