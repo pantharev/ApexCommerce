@@ -22,6 +22,10 @@
     [] - wishlist
     [] - orders
 
+<<<<<<< HEAD
 [x] - credits for shopping cart functionality + context: https://www.youtube.com/watch?v=tEMrD9t85v4&t=3200s
+=======
+[] - reference/credits for shopping cart functionality + context: https://www.youtube.com/watch?v=tEMrD9t85v4
+>>>>>>> 0ca3a1e7d00ca9ab3d16ee556f361e02c7a29a20
 
 [] - footer
