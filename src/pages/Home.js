@@ -19,6 +19,7 @@ export default function Home() {
                 <br></br>Our products come from the best luxury brands and are also made by us with extremely premium quality!
                 <br></br>Hope you're able to find what you're looking for!
             </p>
+
             <button onClick={() => navigate('/products')} className="mt-3 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Go to shop</button>
         </div>
     )

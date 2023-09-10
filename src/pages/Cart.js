@@ -28,7 +28,7 @@ const Cart = () => {
             totalItems += value;
         });
         setItems(totalItems);
-    }, [cartItems])
+    }, [])
 
     const handleCheckout = () => {
         checkout();

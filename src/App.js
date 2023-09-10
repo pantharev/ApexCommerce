@@ -9,6 +9,7 @@ import Header from './shared/Header';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import ProductDescription from './pages/ProductDescription';
+import StoneGame from './pages/StoneGame';
 import { ShopContextProvider } from './context/shop-context';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<ProductDescription />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/stone-game" element={<StoneGame />} />
           </Routes>
         </Layout>
       </ShopContextProvider>

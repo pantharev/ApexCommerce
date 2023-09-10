@@ -33,6 +33,9 @@ export default function Header(){
           <li>
             <Link to="/cart" className="flex gap-x-1 items-center"><AiOutlineShoppingCart /> Cart ({items})</Link>
           </li>
+          <li>
+            <Link to="/stone-game" className="flex gap-x-1 ml-5 items-center text-slate-100"> stone-game</Link>
+          </li>
         </ul>
       </header>
     )
